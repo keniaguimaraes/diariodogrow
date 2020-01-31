@@ -1,0 +1,2 @@
+class Cultivo < ApplicationRecord
+end

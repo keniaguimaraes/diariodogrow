@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fotoperiodos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Descricao</th>
+      <th>Horas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fotoperiodos.each do |fotoperiodo| %>
+      <tr>
+        <td><%= fotoperiodo.descricao %></td>
+        <td><%= fotoperiodo.horas %></td>
+        <td><%= link_to 'Show', fotoperiodo %></td>
+        <td><%= link_to 'Edit', edit_fotoperiodo_path(fotoperiodo) %></td>
+        <td><%= link_to 'Destroy', fotoperiodo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fotoperiodo', new_fotoperiodo_path %>

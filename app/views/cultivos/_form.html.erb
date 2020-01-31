@@ -1,0 +1,32 @@
+<%= form_for(cultivo) do |f| %>
+  <% if cultivo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cultivo.errors.count, "error") %> prohibited this cultivo from being saved:</h2>
+
+      <ul>
+      <% cultivo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :data_cultivo %>
+    <%= f.datetime_select :data_cultivo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tipo_cultivo_id %>
+    <%= f.number_field :tipo_cultivo_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :descricao %>
+    <%= f.text_field :descricao %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

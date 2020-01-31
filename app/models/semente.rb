@@ -1,0 +1,2 @@
+class Semente < ApplicationRecord
+end

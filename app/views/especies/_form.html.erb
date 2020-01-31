@@ -1,0 +1,22 @@
+<%= form_for(especy) do |f| %>
+  <% if especy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(especy.errors.count, "error") %> prohibited this especy from being saved:</h2>
+
+      <ul>
+      <% especy.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :descricao %>
+    <%= f.text_field :descricao %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

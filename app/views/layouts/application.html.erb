@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Diario do Grow</title>
+  
+      <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta content="/" name="turbolinks-root" />
+      <meta content="no-preview" name="turbolinks-cache-control" />
+      
+ <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+
+  </head>
+  <body>
+    <header>
+  
+      <%= render "shared/navbar"%>
+
+    </header>
+
+      
+      <main  role="main">
+    
+      
+             <%= yield %>
+        
+        </main>
+
+    <footer>
+      <%= render "shared/footer" %>
+    </footer>
+
+  </body>
+  
+  
+
+
+</html>
+
+
+ 

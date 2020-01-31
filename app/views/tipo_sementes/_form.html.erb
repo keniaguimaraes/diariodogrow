@@ -1,0 +1,22 @@
+<%= form_for(tipo_semente) do |f| %>
+  <% if tipo_semente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tipo_semente.errors.count, "error") %> prohibited this tipo_semente from being saved:</h2>
+
+      <ul>
+      <% tipo_semente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :descricao %>
+    <%= f.text_field :descricao %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

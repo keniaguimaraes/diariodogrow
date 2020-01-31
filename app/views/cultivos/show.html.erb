@@ -1,0 +1,27 @@
+<div class="container">
+
+<p id="notice"><%= notice %></p>
+
+  <div class="row">
+          <div class="col-md offset-md-1"><h1> Mostrar</h1></div>
+  </div>
+  
+  
+<p>
+  <strong>Data cultivo:</strong>
+  <%= @cultivo.data_cultivo %>
+</p>
+
+<p>
+  <strong>Tipo cultivo:</strong>
+  <%= @cultivo.tipo_cultivo_id %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @cultivo.descricao %>
+</p>
+
+<%= link_to 'Edit', edit_cultivo_path(@cultivo) %> |
+<%= link_to 'Back', cultivos_path %>
+  </div>

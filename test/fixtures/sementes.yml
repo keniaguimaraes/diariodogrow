@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo_semente_id: 1
+  especie_id: 1
+  genero_id: 1
+  tipo_solo_id: 1
+  data_plantio: 2020-01-31 17:55:37
+  data_colheita: 2020-01-31 17:55:37
+  cultivo_id: 1
+
+two:
+  tipo_semente_id: 1
+  especie_id: 1
+  genero_id: 1
+  tipo_solo_id: 1
+  data_plantio: 2020-01-31 17:55:37
+  data_colheita: 2020-01-31 17:55:37
+  cultivo_id: 1

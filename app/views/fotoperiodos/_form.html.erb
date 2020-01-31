@@ -1,0 +1,27 @@
+<%= form_for(fotoperiodo) do |f| %>
+  <% if fotoperiodo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fotoperiodo.errors.count, "error") %> prohibited this fotoperiodo from being saved:</h2>
+
+      <ul>
+      <% fotoperiodo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :descricao %>
+    <%= f.text_field :descricao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :horas %>
+    <%= f.number_field :horas %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

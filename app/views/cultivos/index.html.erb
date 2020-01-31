@@ -1,0 +1,38 @@
+
+
+<div class="container">
+
+<p id="notice"><%= notice %></p>
+
+  <div class="row">
+          <div class="col-md offset-md-1"><h1> Cultivos</h1></div>
+  </div>
+
+  <div class="row">
+          <div class="col-md offset-md-1"><h7><b> Data Cultivo</h7></b></div>
+          <div class="col-md"><h7><b> Tipo Cultivo</h7></b></div>
+          <div class="col-md"><h7><b> Descrição</h7></b></div>
+          <div class="col-md"><h7> </h7></div>
+  </div>
+ 
+
+    <% @cultivos.each do |cultivo| %>
+      <div class="row">
+         <div class="col-md offset-md-1"><h7><%= cultivo.data_cultivo %></h7></div>
+         <div class="col-md"><h7><%= cultivo.tipo_cultivo_id %></h7></div>
+         <div class="col-md"><h7><%= cultivo.descricao %></h7></div>
+         <div class="col-md"><h7><%= link_to 'Ver', cultivo %>
+         <%= link_to 'Editar', edit_cultivo_path(cultivo) %>
+         <%= link_to 'Deletar', cultivo, method: :delete, data: { confirm: 'Are you sure?' } %></h7></div>
+      </div>
+    <% end %>
+
+       
+  <div class="row">         
+    <div class="col-md offset-md-1"> 
+      <%= link_to 'Adicionar', new_cultivo_path, class: 'btn btn-success'  %>
+    </div>
+  </div>
+ 
+</div>
+  

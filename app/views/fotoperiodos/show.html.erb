@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @fotoperiodo.descricao %>
+</p>
+
+<p>
+  <strong>Horas:</strong>
+  <%= @fotoperiodo.horas %>
+</p>
+
+<%= link_to 'Edit', edit_fotoperiodo_path(@fotoperiodo) %> |
+<%= link_to 'Back', fotoperiodos_path %>

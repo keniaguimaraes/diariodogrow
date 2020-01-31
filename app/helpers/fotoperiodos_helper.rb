@@ -1,0 +1,2 @@
+module FotoperiodosHelper
+end

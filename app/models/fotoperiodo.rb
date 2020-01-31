@@ -1,0 +1,2 @@
+class Fotoperiodo < ApplicationRecord
+end
